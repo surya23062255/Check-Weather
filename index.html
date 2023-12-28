@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Accu Weather</title>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+	<video autoplay muted loop plays-inline class="bg-clip">
+		<source src="./video.mp4" type="video/mp4">
+	</video>
+
+	<div class="container">
+
+		<div class="head">
+			<h1>Check Weather</h1>
+		</div>
+
+		<div class="div">
+			<label for="cityName">City Name : </label>
+			<input type="text" id="cityName" placeholder="Enter the City Name">
+		</div>
+
+		<div class="btn" onclick="fetchData()"><button>Check</button></div>
+
+		<div class="city-name">
+			<h1 id="city-name"></h1>
+		</div>
+		
+		<div class="res">
+			<div>
+				<div><img id="temp-img"></div>
+				<div id="temp"></div>
+			</div>
+
+			<div>
+				<div><img id="humidity"></div>
+				<div id="humid"></div>
+			</div>
+
+			<div>
+				<div><img id="wind-img"></div>
+				<div id="wind"></div>
+			</div>
+
+			<div style="border: none;">
+				<div><img id="visible-img"></div>
+				<div id="visibility"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+
+</html>
